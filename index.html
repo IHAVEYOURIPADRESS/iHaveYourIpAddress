@@ -2,12 +2,6 @@
 <html>
 
     <head>
-        <script type="text/javascript">
-        fetch('https://api.ipify.org?format=json')
-        .then(results => results.json())
-        .then(console.log)
-        </script>
-        
     </head>
 
     <body>
@@ -19,22 +13,35 @@
             margin-left: auto;
             margin-right: auto;}
             body{
-                background-image: url('anonymous.jpg');
+                background-image: url('black.jpg');
                 background-repeat: no-repeat;
                 background-attachment: fixed;
                 background-size: cover;
             }
         </style>
-
         <audio src="run.mp3" autoplay>
             <p>If you are reading this, it is because your browser does not support the audio element.     </p>
             <embed src="run.mp3" width="180" height="90" hidden="true" loop="true" />
         </audio>
 
-        <h1 style="color:white; font-size: 200%;">i have your ip address now</h1>
-        <p style="color:rgb(255, 0, 0); font-size: 200%;">run</p>
-        <img src="stolen.jpg" style="width:35%";> <!--ihaveyourip.png-->
-    </body>
+        <h1 style="color:white; font-size: 200%;">YOU BUMBLING IDIOT</h1>
+        <p style="color:rgb(255, 255, 255); font-size: 200%;">I JUST STOLE AND LOGGED YOUR IP ADDRESS</p>
+        <img src="logged.jpg" style="width:35%";> <!--ihaveyourip.png-->
+        <p style="color:rgb(255, 255, 0); font-size: 200%; ID=1;">i will now use your ip address to trace you down your current location,<br>find you, and expose your personal details to the public</p>
+        <p style="color:rgb(255, 0, 0); font-size: 200%; ID=1;">yours truly, anonymous</p>
 
+        <pre id="log"></pre>
+        
+        
+        <div id="output"><div>
+
+        <script>
+        var string = "hello";
+        // append to end of output div
+        function outputToPage() {
+        $('#output').append(string + "<br/>");}
+        </script>
+        
+        </body>
 
 </html>
